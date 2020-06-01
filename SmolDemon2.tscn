@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://EnemyBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Character/Enemies/smol_demon.png" type="Texture" id=2]
+
+[node name="SmolDemon2" instance=ExtResource( 1 )]
+max_hp = 50
+damage = 5
+speed = 175
+
+[node name="CollisionPolygon2D" parent="." index="0"]
+polygon = PoolVector2Array( 4.25742, -11.8458, -2.33525, -10.8691, -7.58497, -7.0844, -10.515, -2.68929, -12.8347, 9.03102, -11.1255, 13.304, 0.350655, 13.304, 7.79793, 9.51936, 12.071, 3.29295, 11.8268, -5.37519 )
+
+[node name="Sprite" parent="." index="1"]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 2 )
+
+[node name="HP" parent="." index="2"]
+margin_left = -6.0
+margin_top = -20.0
+margin_right = -6.0
+margin_bottom = -20.0
+
+[node name="CollisionPolygon2D" parent="Hitbox" index="0"]
+polygon = PoolVector2Array( 8.36085, -10.4876, 5.03923, -11.9917, -0.977295, -11.8037, -5.86572, -8.35675, -7.36985, -7.16598, -9.68872, -7.73003, -10.8168, -4.72177, -9.18734, -3.84436, -10.6915, -2.84161, -10.0021, 3.23759, -12.7597, 9.0661, -11.1929, 12.8264, -7.9339, 13.5785, 0.840195, 13.4531, 6.6687, 10.8209, 10.8677, 5.93249, 12.8732, 0.85605, 11.7451, -5.41116 )

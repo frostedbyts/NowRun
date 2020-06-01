@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.5" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="../colored_packed.tsx"/>
+ <tileset firstgid="1057" source="../colored_transparent_packed.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="10" height="10">
+  <data encoding="csv">
+1,1883,1594,1058,1517,1526,1528,1529,1532,2049,
+1372,1374,1375,1376,1754,1062,1063,1064,1158,2100,
+2101,1713,1714,1764,1765,1767,1717,1719,2003,1271,
+1617,1618,1619,1545,1781,1777,1135,1073,1074,1552,
+1576,1577,1578,1579,1272,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

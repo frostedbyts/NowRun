@@ -1,0 +1,22 @@
+[remap]
+
+importer="vnen.tiled_importer"
+type="PackedScene"
+path="res://.import/rogulike2..tmx-d7c72b6523b8feecde7290effe1c8aa0.scn"
+
+[deps]
+
+source_file="res://rogulike2..tmx"
+dest_files=[ "res://.import/rogulike2..tmx-d7c72b6523b8feecde7290effe1c8aa0.scn" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+uv_clip=true
+image_flags=7
+collision_layer=1
+embed_internal_images=false
+save_tiled_properties=false
+add_background=true
+post_import_script=""

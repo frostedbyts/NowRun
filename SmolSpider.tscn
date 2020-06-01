@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://EnemyBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Character/Enemies/smol_spider.png" type="Texture" id=2]
+
+[node name="SmoleSpider" instance=ExtResource( 1 )]
+max_hp = 30
+damage = 2
+speed = 100
+
+[node name="CollisionPolygon2D" parent="." index="0"]
+polygon = PoolVector2Array( 3.42352, -7.75139, -0.336803, -7.93941, -3.65843, -8.1901, -6.416, -5.99657, -6.98005, -3.11366, -6.79203, 1.52408, -4.8492, 3.9683, -1.0262, 3.9683, 3.17284, 1.52408, 5.30369, -0.857458, 5.42903, -3.17633, 4.73964, -5.62054 )
+
+[node name="Sprite" parent="." index="1"]
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 2 )
+
+[node name="Sight" parent="." index="3"]
+gravity = 0.0
+
+[node name="CollisionPolygon2D" parent="Hitbox" index="0"]
+polygon = PoolVector2Array( 3.55226, -7.91453, -0.371937, -7.99147, -3.75751, -8.14536, -6.45058, -5.91396, -7.06614, -2.83616, -5.83503, -1.22032, -5.75808, -0.143089, -4.21918, 1.85748, -3.14195, 2.47304, -0.371937, 1.16497, 1.78252, -0.527813, 3.32142, -2.37449, 4.78337, -4.06728, 4.3217, -6.52952 )

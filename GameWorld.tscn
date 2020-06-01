@@ -1,0 +1,86 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://GameWorld.gd" type="Script" id=1]
+[ext_resource path="res://dungeon_stuff.tres" type="TileSet" id=2]
+[ext_resource path="res://Pause.gd" type="Script" id=3]
+[ext_resource path="res://Restart.tscn" type="PackedScene" id=4]
+[ext_resource path="res://PauseExit.tscn" type="PackedScene" id=5]
+
+[node name="GameWorld" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Rooms" type="Node" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 2, 2 )
+
+[node name="TileMap" type="TileMap" parent="." groups=[
+"Walls",
+]]
+show_behind_parent = true
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 32, 32 )
+cell_y_sort = true
+format = 1
+
+[node name="Enemies" type="Node" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 128
+
+[node name="Pause" type="Control" parent="CanvasLayer"]
+pause_mode = 2
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.43201
+margin_top = 1.50732
+margin_right = 1.43201
+margin_bottom = 1.50732
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Pause"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 359.727
+margin_top = 74.8271
+margin_right = -359.273
+margin_bottom = -75.1729
+color = Color( 0.219608, 0.219608, 0.219608, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="VBoxContainer" parent="CanvasLayer/Pause/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterRow" type="HBoxContainer" parent="CanvasLayer/Pause/ColorRect/Menu"]
+margin_right = 360.0
+margin_bottom = 450.0
+size_flags_vertical = 3
+
+[node name="Buttons" type="VBoxContainer" parent="CanvasLayer/Pause/ColorRect/Menu/CenterRow"]
+margin_right = 360.0
+margin_bottom = 450.0
+size_flags_horizontal = 3
+
+[node name="MenuButton" parent="CanvasLayer/Pause/ColorRect/Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
+margin_right = 360.0
+margin_bottom = 60.0
+
+[node name="MenuButton2" parent="CanvasLayer/Pause/ColorRect/Menu/CenterRow/Buttons" instance=ExtResource( 5 )]
+margin_top = 64.0
+margin_right = 360.0
+margin_bottom = 124.0
+[connection signal="pressed" from="CanvasLayer/Pause/ColorRect/Menu/CenterRow/Buttons/MenuButton" to="CanvasLayer/Pause" method="_on_MenuButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/Pause/ColorRect/Menu/CenterRow/Buttons/MenuButton2" to="CanvasLayer/Pause" method="_on_MenuButton2_pressed"]

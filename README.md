@@ -32,3 +32,4 @@ Borrowed a lot fo code from the following sources:
 - [Smooth player movement](https://www.youtube.com/watch?v=SUZpVd18IMM)
 - [Titlescreen and pause menu](https://www.youtube.com/watch?v=sKuM5AzK-uA)
 - probably lots of other stuff I forgot. If you see something that comes from somewhere else, please let me know so I can properly credit people. 
+- kenney.nl for some sprites to help with prototyping

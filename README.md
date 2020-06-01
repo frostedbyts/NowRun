@@ -1,5 +1,5 @@
 
-# NowRun
+# Now Run -- Team Name: You're Invited to moon2SUFFER
 My (frostbyt#6969 on Discord) entry for the 2nd annual? [MOONCORD game jam](https://mooncordgamejam.github.io/MoonJam).
 
 Plot/premise: You're trapped in a *spooky* dungeon filled with horrifying monsters of all sorts. Shoot (or run) your way out of the dungeon.

@@ -1,9 +1,10 @@
+
 # NowRun
-My (frostbyt#6969 on Discord) entry for the 2nd annual? 2020? [MOONCORD game jam](https://mooncordgamejam.github.io/MoonJam/pages/games.html).
+My (frostbyt#6969 on Discord) entry for the 2nd annual? [MOONCORD game jam](https://mooncordgamejam.github.io/MoonJam).
 
 Plot/premise: You're trapped in a *spooky* dungeon filled with horrifying monsters of all sorts. Shoot (or run) your way out of the dungeon.
 
-Basically, it's a shitty dungeon crawler shmup or whatever they're called. I'm pretty proud of this steaming pile of shit though considering I've never worked with Godot before now :) I do plan on refining this though, I really enjoyed it.
+Basically, it's a shitty dungeon crawler shmup or whatever they're called. Originally I was going for something where running *might* be more advantageous than shooting your way out (in that I wanted there to be overwhelming, but slower than you mobs), but I made the player too tanky. I'm pretty proud of this steaming pile of shit though considering I've never worked with Godot before now :) I do plan on refining this though, I really enjoyed it.
 
 # Controls
 - **[W], [A], [S], [D]** -- movement, W = up, S = down, etc.

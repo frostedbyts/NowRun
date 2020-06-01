@@ -17,6 +17,8 @@ Basically, it's a shitty dungeon crawler shmup or whatever they're called. Origi
 - **When generating a new dungeon**-- First, press **[Space]**, wait a few seconds, then press **[Tab]** to populate the dungeon, wait a few seconds, then press **[Enter]** to start playing
 
 # Bugs
+- Ok, so don't actually use **[Space]** + **[Tab]** + **[Enter]** as I messed something up and it causes the game to soft-lock?
+- Clicking restart from pause causes the room generation to get weird. It does represent a nice challenge tho moon2DEV
 - When starting a new dungeon, wait 10 seconds before pressing the play button **[Enter]** or else the game will crash.
 - sometimes ghosts will get stuck on walls and such, just shoot them and end their suffering :moon2SUFFER:
 - One time a really hilarious bug happened where a fucking ghost started freaking out, spinning around 'n' shit and then flew off the screen. Probably had something to do with the collision shapes. (that is to say the collision shapes/boxes are shitty and may be prone to bugs)

@@ -4,7 +4,7 @@ My (frostbyt#6969 on Discord) entry for the 2nd annual? [MOONCORD game jam](http
 
 Plot/premise: You're trapped in a *spooky* dungeon filled with horrifying monsters of all sorts. Shoot (or run) your way out of the dungeon.
 
-Basically, it's a shitty dungeon crawler shmup or whatever they're called. Originally I was going for something where running *might* be more advantageous than shooting your way out (in that I wanted there to be overwhelming, but slower than you mobs), but I made the player too tanky. I'm pretty proud of this steaming pile of shit though considering I've never worked with Godot before now :) I do plan on refining this though, I really enjoyed it.
+Basically, it's a basic dungeon crawler shmup or whatever they're called. Originally I was going for something where running *might* be more advantageous than shooting your way out (in that I wanted there to be overwhelming, but slower than you mobs), but I made the player too tanky. I'm pretty proud of this though considering I've never worked with Godot before now :) I do plan on refining this though, I really enjoyed it.
 
 # Controls
 - **[W], [A], [S], [D]** -- movement, W = up, S = down, etc.
@@ -13,15 +13,14 @@ Basically, it's a shitty dungeon crawler shmup or whatever they're called. Origi
 - **[Enter]**-- start playing
 - **Left-click** -- shoot (hold to keep shooting)
 - **Mouse wheel scroll** -- zoom in/out, useful for seeing where you need to go and what lies ahead
-- **Mouse** -- aim (sorry, didn't have time to draw a crosshair, just use your fucking default pointer)
+- **Mouse** -- aim (sorry, didn't have time to draw a crosshair, just use the default pointer)
 - **When generating a new dungeon**-- First, press **[Space]**, wait a few seconds, then press **[Tab]** to populate the dungeon, wait a few seconds, then press **[Enter]** to start playing
 
 # Bugs
 - Ok, so don't actually use **[Space]** + **[Tab]** + **[Enter]** as I messed something up and it causes the game to soft-lock?
 - Clicking restart from pause causes the room generation to get weird. It does represent a nice challenge tho moon2DEV
 - When starting a new dungeon, wait 10 seconds before pressing the play button **[Enter]** or else the game will crash.
-- sometimes ghosts will get stuck on walls and such, just shoot them and end their suffering :moon2SUFFER:
-- One time a really hilarious bug happened where a fucking ghost started freaking out, spinning around 'n' shit and then flew off the screen. Probably had something to do with the collision shapes. (that is to say the collision shapes/boxes are shitty and may be prone to bugs)
+- sometimes ghosts will get stuck on walls and such, just shoot them and end their suffering moon2SUFFER
 - if you get cornered/surrounded by mobs, shoot until enough have died that you can move again
 - Because I was too lazy to figure out a better solution, to end the game (meaning reaching the room marked END) you'll have to walk more than halfway into the room.
 # Acknowledgements
